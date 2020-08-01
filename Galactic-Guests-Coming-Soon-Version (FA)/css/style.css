@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: kalameh-thin;
+    font-weight: 300px;
+    src: url(../font/KalamehWeb_thin.ttf);
+}
+
+@font-face {
+    font-family: kalameh-regular;
+    font-weight: 500px;
+    src: url(../font/KalamehWeb_Regular.ttf);
+}
+
+@font-face {
+    font-family: kalameh-bold;
+    font-weight: 700px;
+    src: url(../font/KalamehWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: kalameh-black;
+    font-weight: 800px;
+    src: url(../font/KalamehWeb_Black.ttf);
+}
+
+body {
+    background: rgb(145, 11, 62);
+    background: linear-gradient(90deg, rgba(145, 11, 62, 1) 0%, rgba(101, 20, 65, 1) 43%, rgba(81, 24, 67, 1) 100%);
+    font-family: kalameh-thin;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.material-icons .md-18 {
+    font-size: 18px;
+}
+
+.galactic-guests-navbar {
+    margin-top: 30px;
+    direction: rtl;
+    animation: right-in 0.5s ease-in forwards;
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+.navbar-brand {
+    color: #f83333;
+    font-family: kalameh-bold;
+    font-size: 25px;
+}
+
+.navbar-brand:hover {
+    color: #ff0000;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-item {
+    color: #f83333;
+    font-family: kalameh-bold;
+    font-size: 20px;
+}
+
+.nav-item:hover {
+    color: #ff0000;
+    transition: 0.4s ease-in-out;
+}
+
+.dropdown button {
+    width: 30px;
+    height: 48px;
+    border: 0;
+    background-color: transparent;
+    color: #f83333;
+    font-family: kalameh-bold;
+    font-size: 20px;
+}
+
+.dropdown-content a {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    display: none;
+    background-color: transparent;
+    color: #f83333;
+    text-align: center;
+    font-family: kalameh-bold;
+    font-size: 18px;
+}
+
+.dropdown i {
+    color: #f83333;
+}
+
+.dropdown:hover .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    padding-right: 15px;
+}
+
+.galactic-guests-heading h2 {
+    color: #ffcc00;
+    font-family: kalameh-black;
+    font-size: 70px;
+    animation: right-in 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.galactic-guests-heading p {
+    color: #ff2a00;
+    font-size: 30px;
+    animation: right-in 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.flex-dir-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    animation: right-in 0.5s ease-in forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+
+.days-number {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-black;
+    font-size: 30px;
+    border-bottom: 3px solid #5D1541;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+
+.hours-number {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-black;
+    font-size: 30px;
+    border-bottom: 3px solid #5D1541;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+
+.minutes-number {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-black;
+    font-size: 30px;
+    border-bottom: 3px solid #5D1541;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+
+.seconds-number {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-black;
+    font-size: 30px;
+    border-bottom: 3px solid #5D1541;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.days-word {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-regular;
+    font-size: 30px;
+    border-top: 2px solid #5D1541;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.hours-word {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-regular;
+    font-size: 30px;
+    border-top: 3px solid #5D1541;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.minutes-word {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-regular;
+    font-size: 30px;
+    border-top: 2px solid #5D1541;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.seconds-word {
+    min-width: 100px;
+    min-height: 60px;
+    color: #ff2a00;
+    background-color: #461439;
+    font-family: kalameh-regular;
+    font-size: 30px;
+    border-top: 2px solid #5D1541;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.galactic-guests-form {
+    animation: right-in 0.5s ease-in forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.email-notifier-input {
+    width: 420px;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+    padding-right: 25px;
+    font-family: kalameh-regular;
+    font-size: 18px;
+}
+
+.email-notifier-btn {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    font-family: kalameh-regular;
+    font-size: 20px;
+    background-color: #C70039;
+    color: #fff;
+    position: relative;
+    left: 121px;
+    top: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.email-notifier-btn:hover {
+    background: #461439;
+    cursor: pointer;
+}
+
+.email-notifier-btn::before {
+    content: ' ';
+    background: #461439;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(225, 225, 225, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.email-notifier-btn:hover::before {
+    left: 100%;
+}
+
+.galactic-guests-planets {
+    width: 500px;
+    height: 1080px;
+    background-image: url(../images/Jupiter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: fade-in 3s ease-in forwards;
+    animation-delay: 0s;
+    opacity: 0;
+    margin-top: 10px;
+}
+
+
+.galactic-guests-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 120px;
+    height: 700px;
+    animation: up-in 2s ease-in forwards;
+    animation-delay: 0s;
+    opacity: 0;
+}
+
+.instagram-icon {
+    width: 35px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.instagram-icon:hover {
+    cursor: pointer;
+}
+
+.youtube-icon {
+    width: 35px;
+    margin-bottom: 15px;
+}
+
+.facebook-icon {
+    width: 35px;
+}
+
+.instagram-icon:hover {
+    cursor: pointer;
+}
+
+.youtube-icon:hover {
+    cursor: pointer;
+}
+
+.facebook-icon:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1280px) {
+    .email-notifier-btn {
+        position: relative;
+        left: -300px;
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+
+    a.navbar-brand {
+        margin-right: -40px;
+    }
+
+    .navbar-nav {
+        margin-left: -40px;
+    }
+
+    .galactic-guests-heading {
+        margin-right: -40px;
+    }
+
+    .galactic-guests-countdown {
+        margin-right: -40px;
+        width: 500px;
+    }
+
+    .galactic-guests-form {
+        margin-right: -40px;
+    }
+
+    .email-notifier-btn {
+        position: relative;
+        right: 300px;
+    }
+
+    .galactic-guests-planets {
+        margin-right: -40px;
+    }
+
+    .galactic-guests-planets {
+        background-image: url(../images/Jupiter-Tablet.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 50px;
+        width: 480px;
+    }
+
+    .galactic-guests-icon {
+        display: flex;
+        align-items: center;
+        margin-top: 205px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+
+    .galactic-guests-heading h2 {
+        margin-right: 80px;
+    }
+
+    .galactic-guests-heading p {
+        margin-right: 30px;
+    }
+
+    .days-number {
+        position: relative;
+        top: -20px;
+        right: -220px;
+    }
+
+    .days-word {
+        position: relative;
+        top: -20px;
+        right: -220px;
+    }
+
+    .hours-number {
+        position: relative;
+        top: -20px;
+        right: -220px;
+    }
+
+    .hours-word {
+        position: relative;
+        top: -20px;
+        right: -220px;
+    }
+
+    .minutes-number {
+        position: relative;
+        top: 120px;
+    }
+
+    .minutes-word {
+        position: relative;
+        top: 120px;
+    }
+
+    .seconds-number {
+        position: relative;
+        top: 120px;
+    }
+
+    .seconds-word {
+        position: relative;
+        top: 120px;
+    }
+
+    .galactic-guests-icon {
+        position: relative;
+        top: -1780px;
+        left: -220px;
+    }
+
+    .galactic-guests-form {
+        position: relative;
+        top: 130px;
+        right: 20px;
+    }
+
+    .email-notifier-input {
+        width: 400px;
+        font-family: kalameh-bold;
+        font-size: 13px;
+    }
+
+    .email-notifier-btn {
+        width: 80px;
+        position: relative;
+        right: 205px;
+    }
+
+    .galactic-guests-planets {
+        background-image: url(../images/Jupiter-Mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 300px;
+        top: 100px;
+        right: 30px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .navbar-brand {
+        position: relative;
+        right: 40px;
+    }
+
+    .galactic-guests-heading h2 {
+        position: relative;
+        right: 280px;
+    }
+
+    .galactic-guests-heading p {
+        position: relative;
+        right: 230px;
+    }
+
+    .flex-dir-row-reverse {
+        position: relative;
+        right: 135px;
+    }
+
+    .galactic-guests-icon {
+        position: relative;
+        top: -1780px;
+        left: -220px;
+    }
+
+    .galactic-guests-form {
+        position: relative;
+        top: 130px;
+        right: 20px;
+    }
+
+    .email-notifier-input {
+        width: 400px;
+        font-family: kalameh-bold;
+        font-size: 13px;
+    }
+
+    .email-notifier-btn {
+        width: 80px;
+        position: relative;
+        right: 205px;
+    }
+
+    .col-left {
+        display: flex;
+    }
+
+    .col-end {
+        display: flex;
+    }
+
+    .galactic-guests-planets {
+        background-image: url(../images/Jupiter-Mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 300px;
+        top: 400px;
+        right: 30px;
+    }
+}
+
+
+.email-popup-wrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email-popup-wrapper .email-popup {
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 400px;
+    background-color: #fff;
+}
+
+
+
+
+@keyframes fade-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes right-in {
+
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes up-in {
+
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}

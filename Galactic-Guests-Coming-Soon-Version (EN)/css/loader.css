@@ -1,0 +1,132 @@
+.wrapper-loading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+}
+
+.wrapper-loading .rocket-wrapper-1 {
+    position: relative;
+    animation: up-shake 0.2s ease infinite;
+}
+
+.wrapper-loading .rocket-wrapper-1::before {
+    content: ' ';
+    position: absolute;
+    bottom: -89px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 150px;
+    background: linear-gradient(#E52F2F, transparent);
+
+}
+
+.wrapper-loading .rocket-wrapper-1::after {
+    content: ' ';
+    position: absolute;
+    bottom: -89px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 150px;
+    background: linear-gradient(#E52F2F, transparent);
+    filter: blur(30px);
+
+}
+
+.wrapper-loading .rocket-img-1 {
+    width: 200px;
+}
+
+
+.wrapper-loading .rocket-wrapper-2 {
+    position: relative;
+    animation: down-shake 0.2s ease infinite;
+}
+
+.wrapper-loading .rocket-wrapper-2::before {
+    content: ' ';
+    position: absolute;
+    bottom: -89px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 150px;
+    background: linear-gradient(#E52F2F, transparent);
+
+}
+
+.wrapper-loading .rocket-wrapper-2::after {
+    content: ' ';
+    position: absolute;
+    bottom: -89px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 150px;
+    background: linear-gradient(#E52F2F, transparent);
+    filter: blur(30px);
+
+}
+
+.wrapper-loading .rocket-img-2 {
+    width: 200px;
+    ;
+}
+
+
+.wrapper-loading .rocket-text {
+    font-size: 2.25em;
+    font-weight: 300;
+    background: rgb(255, 204, 0);
+    background: linear-gradient(0deg, rgba(255, 204, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper-loading i {
+    position: absolute;
+    top: -250px;
+    background: rgba(202, 0, 0, 0.863);
+    animation: stars-drop linear infinite;
+}
+
+@keyframes up-shake {
+
+    0%,
+    100% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+}
+
+@keyframes down-shake {
+
+    0%,
+    100% {
+        transform: translateY(2px);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+
+@keyframes stars-drop {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(200vh);
+    }
+}
